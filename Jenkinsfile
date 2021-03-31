@@ -33,7 +33,7 @@ pipeline {
     stage('Deploy App') {
       steps {
         script {
-           sh 'kubectl apply -f deployment.yml'
+           sh 'kubectl apply -f hellowhale.yml'
         }
       }
     }
